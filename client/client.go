@@ -38,7 +38,7 @@ func socketClient(ip string, port int, message string) {
 func main() {
 
 	var (
-		ip   = getIp()
+		ip   = getIP()
 		port = 8888
 	)
 

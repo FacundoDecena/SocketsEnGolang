@@ -61,9 +61,9 @@ ILOOP:
 		case nil:
 			log.Println("Receive:", data)
 			//if isTransportOver(data) {
-				data = data[:len(data)-1]
-				message = fmt.Sprintf("Hello %s, welcome!", data)
-				break ILOOP
+			data = data[:len(data)-1]
+			message = fmt.Sprintf("Hello %s, welcome!", data)
+			break ILOOP
 			//}
 
 		default:
