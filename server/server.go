@@ -60,11 +60,11 @@ ILOOP:
 			break ILOOP
 		case nil:
 			log.Println("Receive:", data)
-			if isTransportOver(data) {
-				data = data[:len(data)-(len(stopCharacter)+1)]
+			//if isTransportOver(data) {
+				data = data[:len(data)-1]
 				message = fmt.Sprintf("Hello %s, welcome!", data)
 				break ILOOP
-			}
+			//}
 
 		default:
 			log.Fatalf("Receive data failed:%s", err)
