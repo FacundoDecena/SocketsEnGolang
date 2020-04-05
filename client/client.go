@@ -8,7 +8,6 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	env "github.com/FacundoDecena/SocketsEnGo/client"
 )
 
 const (
@@ -39,7 +38,7 @@ func socketClient(ip string, port int, message string) {
 func main() {
 
 	var (
-		ip   = env.IP
+		ip   = getIp()
 		port = 8888
 	)
 
