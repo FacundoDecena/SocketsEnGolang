@@ -21,6 +21,6 @@ func getIp() string{
 	return IP
 }```
 
-the go build -0 build/ client/env.go
+the go build -o build/ client/env.go go build -0 build/ client/env.go
 
 and you are good to go
